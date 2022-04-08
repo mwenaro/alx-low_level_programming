@@ -10,9 +10,13 @@
 int main(void)
 {
 /*Declarations*/
-	char letter;
+	char letter, digit;
 
-	for (letter = 'z'; letter >= 'a'; letter--)
+	for (digit = 48; digit < 58;digit++)
+	{
+	putchar(digit);
+	}
+	for (letter = 'a'; letter <= 'f'; letter--)
 	{
 	putchar(letter);
 	}
