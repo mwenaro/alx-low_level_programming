@@ -14,7 +14,9 @@ int main(void)
 
 	for (digit = 0; digit < 10; digit++)
 	{
-	putchar(digit);
+	/*putchar(digit);*/
+	int putchar(int digit);
+
 	}
 	putchar('\n');
 	return (0);
