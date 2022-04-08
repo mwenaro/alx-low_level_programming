@@ -3,11 +3,13 @@
 /* more headers goes there */
 #include <stdio.h>
 /* betty style doc for function main goes there */
+
 /**
-* main - the main fun prints a tring to the conso*le
-*
-* Return: integer (0)
-*/
+ * main - Prints is +v, is -ve or is 0
+ * 
+ *
+ * Return: 0 is all goes well.
+ */
 
 int main(void)
 {
