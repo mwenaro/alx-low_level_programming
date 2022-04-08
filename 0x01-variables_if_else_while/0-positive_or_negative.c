@@ -4,9 +4,9 @@
 #include <stdio.h>
 /* betty style doc for function main goes there */
 /**
-*main - the main fun prints a tring to the conso*le
+* main - the main fun prints a tring to the conso*le
 *
-*Return: integer (0)
+* Return: integer (0)
 */
 
 int main(void)
