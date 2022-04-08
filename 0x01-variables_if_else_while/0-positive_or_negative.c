@@ -4,10 +4,10 @@
 #include <stdio.h>
 /* betty style doc for function main goes there */
 /**
- *main - the main fun prints a tring to the conso*le
- *
- *Return: integer (0)
- */
+*main - the main fun prints a tring to the conso*le
+*
+*Return: integer (0)
+*/
 
 int main(void)
 {
@@ -19,7 +19,7 @@ int main(void)
 	if(n>0)
 		printf("%d is positive\n",n);
 	else if(n==0)
-		 printf("%d is is zero\n",n);
+		 printf("%d is zero\n",n);
 	else if(n<0)
 		 printf("%d is negative\n",n); 
 	return (0);
