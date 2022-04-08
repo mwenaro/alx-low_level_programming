@@ -12,7 +12,7 @@ int main(void)
 /*Declarations*/
 	int digit;
 
-	for (digit = 48; digit < 57; digit++)
+	for (digit = 48; digit < 58; digit++)
 	{
 	/*putchar(digit);*/
 	putchar(digit);
