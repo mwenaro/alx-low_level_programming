@@ -1,0 +1,34 @@
+#include <stdio.h>
+
+
+/**
+ * main - prints the digits of the alphabets
+ *
+ * Return: 0
+ */
+
+int main(void)
+{
+/*Declarations*/
+	int i, j , n;
+	char num_box [100];
+	n=0;
+	for (i = 48; i < 58; i++)
+	{
+		for (j = 48; j < 58; j++)
+		{	
+		putchar(i);
+		putchar(j);
+
+		if (j != 57)
+		{	
+		number_box [n++] =
+		putchar(',');
+		putchar(' ');
+		}
+
+		}
+	}
+	putchar('\n');
+	return (0);
+}
