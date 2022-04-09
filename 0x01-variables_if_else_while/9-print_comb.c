@@ -17,12 +17,11 @@ int main(void)
 	/*putchar(digit);*/
 	putchar(digit);
 
-		if (digit != 57)
-		{
-  		putchar(',');
-		putchar(' ');
-		}
-
+	if (digit != 57)
+	{
+	putchar(',');
+	putchar(' ');
+	}
 	}
 	putchar('\n');
 	return (0);
