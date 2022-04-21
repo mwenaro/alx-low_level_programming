@@ -1,16 +1,16 @@
 #include "main.h"
 
 /**
- * swap_int - rests the value of n to 98
- * @a: the value to be changed
- * @b: 2nd ag
- * Return: Nothing
+ * swap_int - check the code
+ * @a : 1st ag
+ * @b: @nd ag
+ * Return: Always 0.
  */
-
 void swap_int(int *a, int *b)
 {
-	int temp = *a;
+	int temp;
 
-	*a = *b;
-	*b = temp;
+	temp = *a, *a = *b, *b = temp;
+
 }
+

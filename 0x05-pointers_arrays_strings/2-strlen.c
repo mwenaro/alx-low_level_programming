@@ -1,11 +1,13 @@
 #include "main.h"
 #include <string.h>
+
 /**
- * _strlen - rests the value of n to 98
- * @s: the str whose is to be returned
- * Return: str len
+ * _strlen - check the code
+ * @s: The str whose length is to be calculated
+ * Return: len of str
  */
 int _strlen(char *s)
 {
 	return (strlen(s));
 }
+
