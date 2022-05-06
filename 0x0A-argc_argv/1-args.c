@@ -11,7 +11,7 @@
 int main(int argc, char **argv)
 {
 	(void)argv;
-	printf("%d", argc);
-	printf("\n");
+	if (argc > 0)
+		printf("%d", argc - 1);
 	return (0);
 }
