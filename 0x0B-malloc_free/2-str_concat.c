@@ -31,11 +31,11 @@ int  _strlen(char *str)
 char *str_concat(char *s1, char *s2)
 {
 	char *s;
-	int len1, len2, i, j;
+	int i = 0, j = 0, len1, len2;
 
 	len1 = _strlen(s1);
 	len2 = _strlen(s2);
-	s = malloc(sizeof(char) * (len1 + len2 + 1));
+	s = malloc(sizeof(char) * (len1 + len2));
 
 	if (s == NULL)
 		return (NULL);
