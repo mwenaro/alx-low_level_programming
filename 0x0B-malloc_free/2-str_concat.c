@@ -1,55 +1,50 @@
 #include "main.h"
+#include <stdio.h>
+#include <stdlib.h>
+
 
 /**
- * _strlen - length of a string
- * @s: input char
- * Return: length of a string
+ * _strlen - get the str length
+ *
+ *@str: the str whose length is calculated
+ *
+ * Return: str len
  */
-
-int _strlen(char *s)
+int  _strlen(char *str)
 {
-	int l = 0;
+	int i = 0;
 
-	while (*s != '\0')
-	{
-		s++;
-		l++;
-	}
-	return (l);
+	while (str[i] != '\0')
+		i++;
+
+	return (i);
 }
 
 /**
-* str_concat - Concat 2 strings.
-* @s1: string
-* @s2: string
-* Return: char
-*/
-
+ * str_concat - check the code for ALX School students.
+ *@s1: 1st str
+ *@s2: 2nd str
+ * Return: Str pointer to the str
+ */
 char *str_concat(char *s1, char *s2)
 {
-	unsigned int l1, l2;
-	char *conc, *tmp;
+	char *s;
+	int len1, len2, i, j;
 
-	if (!s1)
-		s1 = "";
-	else
-		l1 = _strlen(s1);
+	len1 = _strlen(s1);
+	len2 = _strlen(s2);
+	s = malloc(sizeof(char) * (len1 + len2));
 
-	if (!s2)
-		s2 = "";
-	else
-		l2 = _strlen(s2);
+	if (s == NULL)
+		return (NULL);
 
-	conc = malloc(l1 + l2 + 1);
-	if (!conc)
-		return (0);
+	for (i = 0; s1[i] != '\0'; i++)
+		s[i] = s1[i];
 
-	tmp = conc;
-	while (*s1)
-		*tmp++ = *s1++;
+	for (j = 0; s2[j] != '\0'; j++)
+		s[i + j] = s2[j];
 
-	while ((*tmp++ = *s2++))
-		;
+	s[j + i] = '\0';
 
-	return (conc);
+	return (s);
 }
