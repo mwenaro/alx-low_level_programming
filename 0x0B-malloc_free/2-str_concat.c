@@ -6,7 +6,6 @@
 /**
  * _strlen - get the str length
  *
-
  *@str: the str whose length is calculated
  *
  * Return: str len
@@ -41,11 +40,17 @@ char *str_concat(char *s1, char *s2)
 	if (s == NULL)
 		return (NULL);
 
-	for (i = 0; s1[i] != '\0'; i++)
+	while (s1[i] != '\0')
+	{
 		s[i] = s1[i];
+		i++;
+	}
 
-	for (j = 0; s2[j] != '\0'; j++)
+	while (s2[j] != '\0')
+	{
 		s[i + j] = s2[j];
+		j++;
+	}
 
 	s[j + i] = '\0';
 
