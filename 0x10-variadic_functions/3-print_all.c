@@ -3,9 +3,10 @@
 #include "variadic_functions.h"
 
 /**
-* print_all - print char, integer, float and string
-* @format: format
-*/
+ * print_all - print char, integer, float and string
+ *
+ * @format: format
+ */
 void print_all(const char * const format, ...)
 {
 	va_list list;
@@ -20,32 +21,32 @@ void print_all(const char * const format, ...)
 			switch (start)
 			{ case 1: printf(", "); }
 			start = 1;
-			printf("%c", va_arg(list, int));
+			printf("%c", va_arg(arg_list, int));
 			break;
 			case 'i':
 			switch (start)
 			{ case 1: printf(", "); }
 			start = 1;
-			printf("%i", va_arg(list, int));
+			printf("%i", va_arg(arg_list, int));
 			break;
-		case 'f':
+			case 'f':
 			switch (start)
 			{ case 1: printf(", "); }
 			start = 1;
-			printf("%f", va_arg(list, double));
+			printf("%f", va_arg(arg_list, double));
 			break;
-		case's':
+			case's':
 			switch (start)
 			{ case 1: printf(", "); }
 			start = 1;
-			p = va_arg(list, char*);
+			p = va_arg(arg_list, char*);
 			if (p)
 			{ printf("%s", p);
-			break; }
+				break; }
 			printf("%p", p);
 			break; }
 		j++;
 	}
 	printf("\n");
-	va_end(list);
+	va_end(arg_list);
 }
